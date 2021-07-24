@@ -1,0 +1,67 @@
+.footer{
+    background:#222222;
+    color:#FFFFFFFB;
+    padding: 40px 0 20px;
+    margin-top: 70px;
+    .container{
+        .row {
+            .col-12{
+                .logo{
+                    margin-bottom: 15px;
+                }
+                p{
+                    color:#666;
+                    font-size:12px;
+                    margin-bottom: 25px;
+                }
+                h4{
+                    span{
+                        font-weight: 600;
+                        color: #FFFFFFFB;
+                    }
+                    font-size: 12px;
+                }
+                h5{
+                    margin-bottom: 15px;
+                    color: #FFFFFFFB;
+                }
+                .column{
+                    li{
+                        a{
+                            color:#666;
+                            font-size: 12px;
+                            text-decoration: none;
+                            transition: all 0.35s ease-in;
+                            &:hover{
+                                color: #40A944;
+                            }
+                        }
+                    }
+                }
+
+                .input-email{
+                    font-size: 14px;
+                    input{
+                        border:none;
+                        outline:none;
+                        background: #fff;
+                        border-radius: 25px 0 0 25px;
+                        padding: 8px 15px;
+
+
+                    }
+                    button{
+                        border:none;
+                        outline: none;
+                        border-radius: 0 25px 25px 0;
+                        padding: 8px 12px;
+                        color: #fff;
+                    }
+                }
+            }
+           
+            
+        }
+       
+    }
+}

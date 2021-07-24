@@ -1,0 +1,17 @@
+.all-categories{
+    margin-bottom: 40px;
+    a{
+        color: #222;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        font-weight: 600;
+        display: block;
+        font-size: 15px;
+        line-height: 1;
+        transition: all 0.35s ease-in;
+        &:hover{
+            color: #40A944;
+        }
+
+    }
+}

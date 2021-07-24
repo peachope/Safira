@@ -1,0 +1,28 @@
+.container{
+   padding: 60px 0 50px;
+    border-bottom: 1px solid #ebebeb;
+    .row{
+        .polocy-item{
+            text-align: center;
+            i{
+                font-size: 40px;
+                color: #40A944;
+            }
+            h5{
+                margin-top: 20px;
+                font-size:14px;
+                line-height: 1;
+                font-weight: bold;
+                text-transform: uppercase;
+                color:#222;
+            }
+            p{
+                font-size: 14px;
+                margin: 0;
+                font-weight: 400;
+                color: #666;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

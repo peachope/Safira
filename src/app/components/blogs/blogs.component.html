@@ -1,0 +1,23 @@
+<div class="our-blog">
+    <div class="container">
+        <h3>
+            From Out Blog
+        </h3>
+        <span class="description-section">Our recent articles about Organic</span>
+        <owl-carousel-o [options]="Options">
+          <ng-container *ngFor="let blog of blogs">
+            <ng-template carouselSlide [id]="blog.id" >
+                <div class="blog-item">
+                  <img [src]="blog.image" alt="" />
+                  <div class="content-blog">
+                      <span>{{ blog.tag }}</span>
+                      <h4><a href="">{{ blog.title }}</a></h4>
+                      <button>April 25,2020</button>
+                  </div>
+                </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+</div>
+

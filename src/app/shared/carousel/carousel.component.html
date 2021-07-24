@@ -1,0 +1,21 @@
+<div class="slider-banner">
+  <owl-carousel-o [options]="customOpt">
+    <ng-container *ngFor="let slide of slidesStore">
+      <ng-template carouselSlide [id]="slide.id" >
+        <div class="wrap-content-carousel" >
+            <div class="container" [ngStyle]="setStyles(slide.src)">
+                <div class="row">
+                    <div class="left-content col-9">
+                        <h1>{{slide.bigTitle}}</h1>
+                        <h4>{{slide.title}}</h4>
+                        <p>Natural organic tomatoes make your health stronger. Put your information here</p>
+                        <button class="btn-shopnow bg-success text-white">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+  
+</div>

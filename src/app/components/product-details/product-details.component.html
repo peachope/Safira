@@ -1,0 +1,51 @@
+<div *ngIf="product"  class="product-details">
+    <div class="top-line">
+        <h4>Product Details</h4>
+        <h6>{{product.name}}</h6>
+    </div>
+
+    <div class="container">
+        <div  class="row">
+            <div class="col-12 col-lg-6">
+                <div class="image-product border">
+                    <img [src]="product.image" width="95%" alt="">
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="infor-product">
+                    <h3>{{ product.name }}</h3>
+                    <div class="rating d-flex">
+                        <ul class="d-flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span><a href="">(1 customer review)</a></span>
+                    </div>
+        
+                    <h4 class="price">{{ product.price }}.000 vnđ</h4>
+        
+                    <div class="detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ex, facilis, ipsum nihil iusto odit illo ea aliquam distinctio unde beatae labore error similique quaerat at atque repellat? Aliquid, laboriosam.</p>
+                    </div>
+                    <input type="number" >
+                    <button >Add to cart</button>
+
+                    <div class="category-tag">
+                        <p><span >Category: </span>{{product.category}}</p>
+                        <div class="d-flex align-items-center icons">
+                            <li class="mx-2 my-0"><a href=""><i class="fab fa-facebook-f text-dark"></i></a></li>
+                            <li class="mx-2"><a href=""><i class="fab fa-instagram  text-dark"></i></a></li>
+                            <li class="mx-2"><a href=""><i class="fab fa-twitter  text-dark"></i></a></li>
+                            <li class="mx-2"><a href=""><i class="fab fa-linkedin-in  text-dark"></i></a></li>
+                            <li class="mx-2"><a href=""><i class="fas fa-wifi text-dark"></i></a></li>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

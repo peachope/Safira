@@ -1,0 +1,29 @@
+<div class="container d-flex flex-column justify-content-center">
+    <h3 class="title-section">
+        Our Product
+    </h3>
+    <p>Recently added our store</p>
+    <span></span>
+    <app-filter></app-filter>
+    
+        <owl-carousel-o [options]="Options">
+            <ng-container >
+                    <ng-template *ngFor="let product of partOne"  carouselSlide [id]="product.category">
+                    <app-item-product  [product]="product">
+                    </app-item-product>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+
+
+          <owl-carousel-o [options]="Options">
+            <ng-container >
+                    <ng-template *ngFor="let product of partTwo"  carouselSlide [id]="product.category">
+                    <app-item-product  [product]="product">
+                    </app-item-product>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+</div>
+
+

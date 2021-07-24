@@ -1,0 +1,60 @@
+@import "../../../assets/variable";
+@import "../../../assets/mixin";
+
+.container{
+    margin-top: 70px;
+    
+    .title-section {
+       
+        text-align: center;
+        font-size: 2.8571em;
+        line-height: 1;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+        color: #222;
+    }
+    p{
+        font-size:13px;
+        text-align: center;
+        color: #888;
+    }
+    .row{
+        .product{
+            .product-bestSeller{
+               
+                box-shadow:0px 0px 5.95px 1.05px rgba(0,0,0,0.06) ;
+                padding: 0 10px;
+                border: 1px solid #fff;
+                .product-name{
+                    a{
+                        color:#333;
+                        @include change-color;
+                    }
+                    
+                }
+                &:hover{
+                    border: 1px solid #40a944;
+                }
+            }
+            
+        }
+        padding-top: 40px;
+        
+    }
+}
+@media (min-width: 575px){
+    .product-bestSeller{
+        width: 45%;
+    }
+}
+@media (max-width: 767.98px){
+    .product{
+        display: flex;
+        flex: wrap;
+        .product-bestSeller{
+            width: 95%;
+            padding: 0 20px;
+           
+        }
+    }
+}

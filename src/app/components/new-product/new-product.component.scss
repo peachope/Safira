@@ -1,0 +1,26 @@
+.container {
+  padding: 40px 0 0 0;
+  text-align: center;
+  margin-bottom: 70px;
+  h3 {
+    font-size: 2.8571em;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: #222;
+  }
+
+  p {
+    line-height: 1;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px !important;
+  }
+  span{
+      display: block;
+      margin: 0px auto;
+      width: 40px;
+      height: 2px;
+      background: rgb(104, 100, 100);
+  }
+}

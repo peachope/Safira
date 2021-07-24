@@ -1,0 +1,76 @@
+
+.slider-banner{
+    .wrap-content-carousel{
+        background-color:#F4F4F4;
+            background-attachment: fixed;
+            padding: 40px 0 0 0;
+            .container{
+                padding:0 20px;
+                margin-top: 0 !important;
+                height:450px;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                .row{
+                    .left-content{
+                        h1{
+                            font-size:40px;
+                            font-weight: bold;
+                            margin-bottom: 20px;
+                            animation: fadeIn 1s ease-in forwards;
+                            opacity: 0;
+                            animation-delay: 1s;
+                        }
+                        h4{
+                            margin-bottom: 15px;
+                            font-size: 36px;
+                            line-height: 40px;
+                            font-family: 'Work Sans', sans-serif;
+                            opacity: 0;
+                            font-weight:400;
+                            animation: fadeIn 2s ease-in forwards;
+                            animation-delay: 2.3s;
+                        }
+                        p{
+                            color:#686868;
+                            opacity: 0;
+                            line-height: 28px;
+                            animation: fadeIn 2s ease-in forwards;
+                            animation-delay: 3.4s;
+                        }
+                        .btn-shopnow{
+                            outline:none;
+                            border: none;
+                            border-radius: 25px;
+                            padding: 8px 20px;
+                            animation: fadeIn 2s ease-in forwards;
+                            animation-delay: 4s;
+                            opacity: 0;
+                            &:hover{
+                                background:#000000;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+}
+
+
+
+
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

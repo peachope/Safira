@@ -1,0 +1,119 @@
+.product-details{
+    .top-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('http://demo.roadthemes.com/safira/wp-content/themes/safira/images/bg_breadcrum.jpg');
+        height: 170px;
+        h4{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    .container{
+        margin-top: 50px;
+        .row{
+            .col-12{
+                .infor-product {
+                    border: 1px solid #e7e7e7;
+                    border-radius: 5px;
+                    padding: 25px;
+                    h3 {
+                        font-size: 1.7143em;
+                        color: #222;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                    }
+                    .rating {
+                        margin: 20px 0;
+                        ul {
+                            margin-right: 25px;
+                            li {
+                                i {
+                                    font-size: 13px;
+                                    color: #F9D738;
+                                }
+                            }
+                            span {
+                                a {
+                                    color: #666;
+                                    transition: all 0.35s ease-in;
+                                    &:hover {
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .price {
+                        color: green;
+                        font-size: 23px;
+                        font-weight: 600;
+                        line-height: 1;
+                        margin-bottom: 30px;
+                    }
+                    .detail {
+                        width: 100%;
+                        padding: 25px 0;
+                        border-top: 1px solid #e7e7e7;
+                        border-bottom: 1px solid #e7e7e7;
+                        p {
+                            color: #666;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                    }
+                    input {
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        width: 100px;
+                        outline: none;
+                        border: 1px solid #e7e7e7;
+                        font-size: 15px;
+                    }
+                    button {
+                        border-radius: 25px;
+                        color: white;
+                        border: 1px solid green;
+                        padding: 9px 45px;
+                        font-size: 17px;
+                        background: green;
+                        margin: 20px 0 20px 15px;
+                        transition: 0.35s all ease;
+                        text-transform: uppercase;
+                        &:hover {
+                            background: #222;
+                        }
+                    }
+                    .category-tag{
+                        margin-bottom: 10px;
+                        p{
+                            
+                            color:#666;
+                           
+                            span{
+                                color: #333;
+                            }
+                        }
+                        .icons{
+                            li{
+                                a{ 
+                                    i{
+                                        color:#333;
+                                        &:hover{
+                                            color: #279D2B;
+                                        }
+                                    }
+                                  
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.banner-sale{
+    background-image: url(../../../assets/banner-black.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 450px;
+    margin-top: 50px;
+    .container{
+        .banner-content-black{
+            .tag-banner{
+                font-size: 20px;
+                font-weight: 600;
+                
+                color: #40A944;
+            }
+            .title-banner{
+                color:#222222;
+                font-size: 3.2857em;
+                margin: 20px 0 10px;
+                font-weight: 800;
+                line-height: 1;
+                letter-spacing: 7px;
+
+            }
+            .description{
+                margin-bottom: 30px;
+                font-weight:400;
+                color:rgba(34, 34, 34, 0.877);
+                line-height: 1;
+                font-size: 1.75em;
+            }
+            button{
+               display:inline-block; 
+               padding: 8px 25px;
+               background: #40A944;
+               border-radius: 25px;
+               color: #fff;
+               font-weight: 600;
+               border: none;
+               outline-color: #40A944;
+
+            }
+            
+        }
+    }
+}
