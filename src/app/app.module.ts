@@ -16,13 +16,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PolocyShopComponent } from './shared/polocy-shop/polocy-shop.component';
 import { NewProductComponent } from './components/new-product/new-product.component';
 import { ItemProductComponent } from './components/item-product/item-product.component';
-
 import { BannerHomeComponent } from './components/banner-home/banner-home.component';
 import { BestSellerComponent } from './components/best-seller/best-seller.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { BackFridayComponent } from './components/back-friday/back-friday.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { CartDetailComponent } from './views/cart-detail/cart-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,17 +43,18 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     BlogsComponent,
     BackFridayComponent,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartItemComponent,
+    CartDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CarouselModule
-
+    CarouselModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
