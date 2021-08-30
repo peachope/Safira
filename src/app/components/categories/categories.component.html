@@ -1,13 +1,32 @@
 <div class="categorise-line d-none d-lg-block">
-    <div class="container d-flex align-items-center  ">
-         <div class="text-white">ALL CATEGORIES</div>
-          <div class="menu-line d-flex align-items-center ml-5">
-            <li class="ml-4 "><a class="text-white pr-2" href="">Home</a> <i class="fas fa-angle-down text-white "></i> </li>
-            <li class="ml-4 "><a class="text-white pr-2" href="">Shop</a> <i class="fas fa-angle-down text-white"></i> </li>
-            <li class="ml-4 "><a class="text-white pr-2" href="">Page</a> <i class="fas fa-angle-down text-white"></i> </li>
-            <li class="ml-4 "><a class="text-white pr-2" href="">Blog</a> <i class="fas fa-angle-down text-white"></i> </li>
-            <li class="ml-4 "><a class="text-white pr-2" href="">Contact</a> <i class="fas fa-angle-down text-white"></i> </li>
-
-          </div>
+  <div class="container d-flex align-items-center">
+    <div (click)="clickEvent()" class="text-white all-category">
+        ALL CATEGORIES  <i class="fas fa-angle-down text-white"></i>
+       <ul  [ngClass]="status ? 'drop-down d-block' : 'drop-down d-none'"  >
+        <li><a  href="">vegetables</a></li>
+        <li><a href="">fruits</a></li>
+        <li><a href="">nuts</a></li>
+      </ul>
     </div>
+    
+    <div class="menu-line d-flex align-items-center ml-5">
+      <li class="ml-4">
+        <a routerLink='[/home]' class="text-white pr-2" href="">Home</a>
+        <i class="fas fa-angle-down text-white"></i>
+      </li>
+     
+      <li class="ml-4">
+        <a class="text-white pr-2" href="">Page</a>
+        <i class="fas fa-angle-down text-white"></i>
+      </li>
+      <li class="ml-4">
+        <a class="text-white pr-2" href="">Blog</a>
+        <i class="fas fa-angle-down text-white"></i>
+      </li>
+      <li class="ml-4">
+        <a class="text-white pr-2" href="">Contact</a>
+        <i class="fas fa-angle-down text-white"></i>
+      </li>
+    </div>
+  </div>
 </div>

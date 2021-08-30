@@ -34,7 +34,8 @@ export class ProductServiceService {
       catchError(this.handleError<Product>(`Fetch product ${id}`))
     );
   }
-
+  
+  
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.log(error);

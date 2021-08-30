@@ -7,7 +7,7 @@ import { Cart } from 'src/app/models/cart';
   styleUrls: ['./cart-item.component.scss'],
 })
 export class CartItemComponent implements OnInit {
-  @Input() cart: Cart | undefined;
+  @Input() cart!: Cart;
   
   constructor() {}
   

@@ -24,21 +24,26 @@
           my-2 my-md-0
           mr-md-3
           ml-5
+          d-flex
           font-weight-normal
           d-none d-md-none d-lg-block d-xl-block
         "
       >
-        <a class="py-1 px-2 text-dark">LOGIN</a>
-        <a class="py-1 px-2 text-dark" href="#">SIGN UP</a>
-        <a class="py-1 pl-3 text-dark" href="#"
-          ><i class="far fa-heart"></i>
-          <span class="p-1 bg-red">0</span>
-        </a>
+        <li>
+          <a (click)="handleOpenForm()" class="py-1 px-2 text-dark">LOGIN</a>
+        </li>
+        <app-login [isOpen]="isOpen" (closeForm)="handleOpenForm()"></app-login>
+        <div class="icons-right">
+          <ul class="d-flex">
+            <li class="d-flex demo">
+              <i class="far fa-heart"></i> <span>0</span>
+            </li>
 
-        <a routerLink="/cart" class="py-1 ml-3 text-dark"
-          ><i class="fas fa-cart-plus"></i>
-          <span class="p-1 bg-red">0</span>
-        </a>
+            <li routerLink="/cart" class="d-flex demo">
+              <i class="fas fa-shopping-cart"></i> <span>{{ countCart }}</span>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="hambuger d-block d-lg-none d-xl-none">
         <span></span>

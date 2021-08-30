@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/models/product';
 import { ProductServiceService } from 'src/app/services/product-service.service';
+import { CartService } from 'src/app/services/cart.service';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -12,7 +13,8 @@ export class ProductDetailsComponent implements OnInit {
   products: Product[] = [];
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductServiceService
+    private productService: ProductServiceService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {

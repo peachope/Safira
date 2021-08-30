@@ -1,33 +1,117 @@
 @import "../../../assets/variable";
-.top-bar{
-//    background-color: $primary-color;
+
+.top-bar {
+    //    background-color: $primary-color;
     margin: 0 !important;
     padding: 20px 0 20px;
 
-    .container{
-       padding: auto 0;
-       border:none !important;
-        img{
+    .container {
+        padding: auto 0;
+        border: none !important;
+
+        img {
             width: 120px;
-            height:30px;
+            height: 30px;
         }
-        nav{
-            a{
-                color:white;
+
+        nav {
+            display: flex !important;
+
+            a {
+                color: white;
                 font-size: 14px;
+                cursor: pointer;
+
+                span {
+                    min-width: 10px;
+                    min-height: 10px;
+                }
             }
-            
+
+            .icons-right {
+                margin-left: 20px;
+
+                li {
+                    position: relative;
+                    margin-right: 30px;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        span {
+                            animation: up 2.5s linear;
+                            animation-iteration-count: infinite;
+                        }
+
+                        i {
+                            color: #40a944;
+                            transition: all 0.4;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        font-size: 15px;
+                    }
+
+                    i {
+                        font-size: 17px;
+                        transition: all 0.35s ease-in;
+
+                        &:hover {
+                            color: #40a944;
+                        }
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    bottom: -3px;
+                    left: -5px;
+                    transition: all 0.4s ease-in;
+                    width: 16px;
+                    height: 16px;
+                    color: white;
+                    font-size: 11px;
+                    border-radius: 50%;
+                    background-color: #f10e0e;
+                    text-align: center;
+                }
+            }
         }
-        .hambuger{
-            span{
+
+        .hambuger {
+            span {
                 display: block;
                 width: 15px;
                 height: 2px;
                 background: #333;
                 margin-bottom: 5px;
             }
-          
         }
     }
 }
 
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

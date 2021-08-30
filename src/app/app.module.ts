@@ -1,4 +1,8 @@
-import { NgModule } from '@angular/core';
+import {
+  NgModule,
+  NO_ERRORS_SCHEMA,
+  CUSTOM_ELEMENTS_SCHEMA,
+} from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +28,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { CartDetailComponent } from './views/cart-detail/cart-detail.component';
+import { LoginComponent } from './components/login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +52,7 @@ import { CartDetailComponent } from './views/cart-detail/cart-detail.component';
     ProductDetailsComponent,
     CartItemComponent,
     CartDetailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,5 +63,6 @@ import { CartDetailComponent } from './views/cart-detail/cart-detail.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
 })
 export class AppModule {}

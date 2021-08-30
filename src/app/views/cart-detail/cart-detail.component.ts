@@ -14,10 +14,9 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-cart-detail',
   templateUrl: './cart-detail.component.html',
-  styleUrls: ['./cart-detail.component.scss']
+  styleUrls: ['./cart-detail.component.scss'],
 })
 export class CartDetailComponent implements OnInit {
-
   cart: Cart | undefined;
   carts: Cart[] = [];
   cartTotal = 0;
@@ -29,16 +28,15 @@ export class CartDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getListCart();
+    this.calcCartTotal();
   }
   ngOnchange() {
-    
     this.loadCart();
   }
   getListCart() {
-    this.cartService.getListCartItems().subscribe((items: Cart[]) => {
+    this.cartService.getCartItems().subscribe((items: Cart[]) => {
       this.carts = items;
       console.log(this.carts);
-      this.calcCartTotal();
     });
   }
   loadCart() {
@@ -53,5 +51,4 @@ export class CartDetailComponent implements OnInit {
       this.cartTotal += item.qty * item.price;
     });
   }
-
 }
