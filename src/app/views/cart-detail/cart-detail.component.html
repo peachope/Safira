@@ -24,6 +24,7 @@
             <thead class="text-muted">
               <tr class="small text-uppercase">
                 <th scope="col">Product</th>
+                <th scope="col">Product Name</th>
                 <th scope="col" width="120">Quantity</th>
                 <th scope="col" width="120">Price</th>
                 <th scope="col" class="text-right" width="200"></th>
@@ -31,37 +32,32 @@
             </thead>
             <tbody>
               <tr *ngFor="let cart of carts">
+                <td class="image-td">
+                  <div class="aside">
+                    <img [src]="cart.image" class="mr-4 p-0" />
+                  </div>
+                </td>
                 <td>
-                  <figure class="itemside d-flex">
-                    <div class="aside">
-                      <img [src]="cart.product.image" class="mr-4" />
-                    </div>
-                    <figcaption class="info">
-                      <a href="#" class="title text-dark">{{
-                        cart.product.name
-                      }}</a>
-                      <p class="small text-muted">
-                        Category: {{ cart.product.category }}
-                      </p>
-                    </figcaption>
-                  </figure>
+                  <figcaption class="info">
+                    <a href="#" class="title text-dark">{{
+                      cart.productTitle
+                    }}</a>
+                    <p class="small text-muted">
+                      Category: {{ cart.category }}
+                    </p>
+                  </figcaption>
                 </td>
                 <td>
                   <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                    <option>{{ cart.qty }}</option>
                   </select>
                 </td>
                 <td *ngIf="cart">
                   <div class="price-wrap">
                     <var class="price">{{
-                      cart.qty * cart.product.price | currency: "VND"
+                      cart.qty * cart.price | currency: "VND"
                     }}</var>
-                    <small class="text-muted">
-                      {{ cart.product.price }} each</small
-                    >
+                    <small class="text-muted"> {{ cart.price }} each</small>
                   </div>
                   <!-- price-wrap .// -->
                 </td>
@@ -75,7 +71,9 @@
                   >
                     <i class="fa fa-heart"></i
                   ></a>
-                  <a href="" class="btn btn-light btn-round"> Remove</a>
+                  <a (click)="delete(cart)" class="btn btn-light btn-round">
+                    Remove</a
+                  >
                 </td>
               </tr>
             </tbody>

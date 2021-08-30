@@ -30,17 +30,18 @@
         "
       >
         <li>
-          <a (click)="handleOpenForm()" class="py-1 px-2 text-dark">LOGIN</a>
+          <a (click)="handleOpenForm()" class="py-1 px-3 text-dark">LOGIN</a>
         </li>
         <app-login [isOpen]="isOpen" (closeForm)="handleOpenForm()"></app-login>
         <div class="icons-right">
           <ul class="d-flex">
-            <li class="d-flex demo">
+            <li class="d-flex demo ml-2">
               <i class="far fa-heart"></i> <span>0</span>
             </li>
 
-            <li routerLink="/cart" class="d-flex demo">
-              <i class="fas fa-shopping-cart"></i> <span>{{ countCart }}</span>
+            <li routerLink="/cart" class="d-flex demo ml-2">
+              <i class="fas fa-shopping-cart"></i>
+              <span>{{ countCart }}</span>
             </li>
           </ul>
         </div>
